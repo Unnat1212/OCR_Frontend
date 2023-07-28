@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import "typeface-poppins";
+import "typeface-heebo";
+import Home from "./Components/Home";
+import Setting from "./Components/Setting/Setting";
+import AllInvoices from "./Components/All-invoice/AllInvoices";
+import { ThemeProvider } from "@mui/material/styles";
+import { theme } from "./Theme/Theme";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/setting" element={<Setting />} />
+        <Route path="/all-invoice" element={<AllInvoices />} />
+      </Routes>
+    </ThemeProvider>
   );
 }
 

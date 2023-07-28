@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.OTPHeading {
+  position: absolute;
+  font-weight: 600;
+  color: rgba(159, 119, 235, 1);
+  white-space: pre-line;
+}
+
+.OCR_OTP_Logo {
+  height: 35px;
+  align-items: flex-start;
+}
+
+.OTPEmailInputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.OTPEmailLabel {
+  font-weight: 500;
+  color: rgba(43, 43, 43, 1);
+}
+
+.OTPEmailInput {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.OTPFirstGrid {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.OTPSecondGrid {
+  box-shadow: "none";
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
